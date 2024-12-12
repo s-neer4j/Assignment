@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Message</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+    button { padding: 10px 20px; font-size: 16px; }
+    p { font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Random Message Generator</h1>
+  <button onclick="fetchMessage()">Get Random Message</button>
+  <p id="message"></p>
+
+  <script>
+    async function fetchMessage() {
+      const response = await fetch('<API_GATEWAY_URL>/random-message');
+      const data = await response.json();
+      document.getElementById('message').innerText = data.message;
+    }
+  </script>
+</body>
+</html>
