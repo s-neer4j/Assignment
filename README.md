@@ -1,6 +1,5 @@
-# Assignment
-
-Serverless API testing
-
-
-
+<<<<<<< HEAD
+(Your local changes)
+=======
+(Remote changes)
+>>>>>>> (main)
