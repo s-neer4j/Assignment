@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-(Your local changes)
+Your changes
 =======
-(Remote changes)
->>>>>>> (main)
+Changes from origin/main
+>>>>>>> origin/main
